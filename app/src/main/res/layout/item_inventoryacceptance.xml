@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/rowsItem"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:text="CHEESE CAKE PK"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:theme="@style/AppTheme.FontStyle"
+         />
+
+    <TextView
+        android:id="@+id/rowsUnit"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="PK"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:theme="@style/AppTheme.FontStyle"
+         />
+
+    <TextView
+        android:id="@+id/rowsPrev"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="1"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="5dp"
+        android:theme="@style/AppTheme.FontStyle"
+         />
+
+    <TextView
+        android:id="@+id/rowsNew"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="1"
+        android:paddingRight="5dp"
+        android:theme="@style/AppTheme.FontStyle"
+        />
+
+    <TextView
+        android:id="@+id/rowsTotal"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:text="2"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:theme="@style/AppTheme.FontStyle"
+         />
+
+</LinearLayout>
+

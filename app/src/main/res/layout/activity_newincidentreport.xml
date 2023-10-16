@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="New Incident Report"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNIRRType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="REPORT TYPE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spNIRRType"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="report type"
+        android:textColorHint="#05ab9a"/>
+
+    <TextView
+        android:id="@+id/tvNIRDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <EditText
+        android:id="@+id/etNIRDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/\- "
+        android:maxLength="100"
+        android:hint="details"
+        android:drawableLeft="@drawable/ic_details"
+        android:drawablePadding="10dp"
+       />
+
+    <TextView
+        android:id="@+id/tvNIRRBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORTED BY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <EditText
+        android:id="@+id/etNIRRBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+        android:maxLength="100"
+        android:hint="name"
+        android:drawableLeft="@drawable/ic_person"
+        android:inputType="textCapCharacters"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvNIRReference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REFERENCE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <LinearLayout
+        android:id="@+id/llNIRReference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNIRReference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/\- "
+            android:drawableLeft="@drawable/ic_reference"
+            android:drawablePadding="10dp"
+            android:hint="reference"
+            android:maxLength="100"/>
+
+        <ImageView
+            android:id="@+id/ivNIRCamera"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_camera"
+            android:layout_alignParentTop="true"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNIRSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"></Button>
+
+
+</LinearLayout>

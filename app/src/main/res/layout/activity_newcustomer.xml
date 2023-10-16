@@ -1,0 +1,365 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="90dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvNCCName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER NAME"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCCName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ1234567890 "
+                android:maxLength="30"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_store"
+                android:drawablePadding="10dp"
+                android:hint="customer name"
+                />
+
+            <TextView
+                android:id="@+id/tvNCCType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER TYPE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spNCCType"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="customer type"
+                android:textColorHint="#05ab9a" />
+
+            <TextView
+                android:id="@+id/tvNCOName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OWNER NAME"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCOName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ "
+                android:maxLength="30"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="owner name" />
+
+            <TextView
+                android:id="@+id/tvNCRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROUTE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkNCMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chkNCTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginLeft="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/chkNCWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="W"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginLeft="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/chkNCThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Th"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginLeft="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/chkNCFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginLeft="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/chkNCSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNCTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TELEPHONE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_telephone"
+                android:drawablePadding="10dp"
+                android:hint="telephone" />
+
+            <TextView
+                android:id="@+id/tvNCMphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOBILE NO"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCMphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="13"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="10dp"
+                android:hint="mobile no"
+                />
+
+            <TextView
+                android:id="@+id/tvNCBAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUSINESSS ADDRESS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCBAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ1234567890 "
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="business address"
+                android:inputType="textCapCharacters"
+                android:maxLength="30" />
+
+            <TextView
+                android:id="@+id/tvNCBCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CITY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCBCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ "
+                android:maxLength="30"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="city" />
+
+            <TextView
+                android:id="@+id/tvNCBRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGION"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etNCBRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ1234567890 "
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="region"
+                android:maxLength="3" />
+
+            <TextView
+                android:id="@+id/tvNCBPCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTAL CODE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCBPCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:inputType="number|numberDecimal"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="postal code" />
+
+
+            <CheckBox
+                android:id="@+id/chkNCHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home is Same As Business Address"/>
+
+            <TextView
+                android:id="@+id/tvNCHAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME ADDRESS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCHAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.,/\- "
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="home address"
+                android:maxLength="100"
+                android:inputType="textCapCharacters"/>
+
+            <TextView
+                android:id="@+id/tvNCHCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CITY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCHCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.,/\- "
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="city"
+                android:maxLength="100"
+                android:inputType="textCapCharacters"/>
+
+            <TextView
+                android:id="@+id/tvNCHRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGION"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCHRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="region"
+                android:maxLength="3"
+                android:inputType="textCapCharacters"/>
+
+            <TextView
+                android:id="@+id/tvNCHPCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTAL CODE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCHPCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="10dp"
+                android:hint="postal code"
+                android:maxLength="4"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvNCRemarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REMARKS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etNCRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/\- "
+                android:drawableLeft="@drawable/ic_details"
+                android:drawablePadding="10dp"
+                android:hint="remarks"
+                android:maxLength="100"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvNCDP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dataprivacy"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnNCSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008000"
+                android:text="SUBMIT"
+                android:textColor="#FFFFFF"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

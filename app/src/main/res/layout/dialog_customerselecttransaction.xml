@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvDCTTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Select Transaction"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+    <TextView
+    android:id="@+id/tvDCTCustName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2621-STORE"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:textSize="16dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/DCTRGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RadioButton
+            android:id="@+id/rbDCTARPMent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AR Payment"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbDCTReturns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Returns"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbDCTNSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Sales"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbDCTPSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Survey"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvDCTCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/red"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDCTOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">>
+
+    <TextView android:id="@+id/tvDTDTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Transaction for the day"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDTDTId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SR123"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDTDHTId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="TRANSACTION ID"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDTDTTyp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="AR"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDTDHTTyp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="TRANSACTION TYPE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDTDCustomer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CUST123"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDTDHCustomer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="CUSTOMER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <TextView
+        android:id="@+id/tvDTDAmt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1,000.00"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDTDHAmt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="AMOUNT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDTDDtTm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="12/14/18 5:23 PM"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDTDHDtTm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="DATE TIME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvDTDViewQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW QR"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#3300ff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDTDPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REPRINT"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#FF0000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDTDOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

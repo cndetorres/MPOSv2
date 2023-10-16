@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dip"
+        android:paddingLeft="@dimen/_50sdp"
+        android:text="Must Carry List"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text=" "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/_12sdp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/chkCheeseCake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheese Cake"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:enabled="false"
+            android:textColor="#000"
+            android:buttonTint="#000"
+            />
+
+        <CheckBox
+            android:id="@+id/chkWhattaChocolahat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whatta Chocolahat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:enabled="false"
+            android:textColor="#000"
+            android:buttonTint="#000"/>
+
+        <CheckBox
+            android:id="@+id/chkLavaChocolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAVA CHOCOLATE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:enabled="false"
+            android:textColor="#000"
+            android:buttonTint="#000"/>
+
+
+        <CheckBox
+            android:id="@+id/chkInipitAssorted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INIPIT IBAT IBANG FLAVOR"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:enabled="false"
+            android:textColor="#000"
+            android:buttonTint="#000"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSuggestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLOSE"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#F44336"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"/>
+
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROCEED"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="?attr/selectableItemBackground"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

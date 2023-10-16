@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Payment Details"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPDAmtDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTitle">
+
+        <TextView
+            android:id="@+id/tvPDAmtDue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Amount Due:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/tvPDAmtDueItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="1,100.80"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llPDDisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPDAmtDue">
+
+        <TextView
+            android:id="@+id/tvPDDisc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Discount:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvPDDiscItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPDLReturns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPDDisc">
+
+        <TextView
+            android:id="@+id/tvPDLReturns"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Less Returns:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvPDLReturnsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPDAmtPd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPDLReturns">
+
+        <TextView
+            android:id="@+id/tvPDAmtPd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Amount Paid:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvPDAmtPdItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="1,100.80"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPDCChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPDAmtPd">
+
+        <TextView
+            android:id="@+id/tvPDCChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Cash Change:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvPDCChangeItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPDBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPDCChange">
+
+        <TextView
+            android:id="@+id/tvPDBalance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Balance:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvPDBalanceItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="1,100.80"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvPDHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/llPDBalance"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <ListView
+        android:id="@+id/lvPDDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvPDHeader"
+        android:layout_marginBottom="@dimen/_55sdp"/>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btPDNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="@dimen/_13sdp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_paymentdetails"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">>
+
+    <TextView android:id="@+id/tvDICTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Acceptance Confirmation"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+    <EditText
+        android:id="@+id/etDICPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:maxLength="30"
+        android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <EditText
+        android:id="@+id/etDICOdeometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_vehicle"
+        android:hint="odometer reading"
+        android:inputType="number"
+        android:drawablePadding="10dp"
+        android:maxLength="8"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvDICCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/red"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDICAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

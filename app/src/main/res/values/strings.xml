@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DPOS</string>
+
+    <string name="dataprivacy">by clicking the submit button you agree with the <u><b>terms and Privacy Policy</b></u> of BEFC.</string>
+    <string name="dataprivacystatement">The personal data gathered from this application is entered and stored within the company’s authorized information and communications system and will only be accessed by the BEFC authorized personnel. The BEFC have established appropriate organizational, technical and physical security measures to ensure the protection of customer\'s\ personal data. </string>
+
+    <string-array name="arrayChannel">
+        <item>Please select channel</item>
+    </string-array>
+
+    <string-array name="arrayRegion">
+        <item>Please select region</item>
+    </string-array>
+
+    <string-array name="arrayProvince">
+        <item>Please select province</item>
+    </string-array>
+
+    <string-array name="arrayCityMunicipality">
+        <item>Please select city/municipality</item>
+    </string-array>
+
+    <string-array name="arrayBrgy">
+        <item>Please select barangay</item>
+    </string-array>
+
+    <string-array name="arrayOrderDay">
+        <item>Please select order day</item>
+    </string-array>
+
+    <string-array name="arrayDeliveryDay">
+        <item>Please select delivery day</item>
+    </string-array>
+
+</resources>

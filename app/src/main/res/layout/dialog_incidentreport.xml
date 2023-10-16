@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">>
+
+    <TextView android:id="@+id/tvDIRTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Incident Report"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDIRDDateTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="07/18/18 4:17:55 PM"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDIRHDateTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="DATE AND TIME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDIRDType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ROBBERY/THEFT"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDIRHType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="TYPE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDIRDRBy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TRIAL"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDIRHRBy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="REPORTED BY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <TextView
+        android:id="@+id/tvDIRDDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TRIAL"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDIRHDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="DETAILS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDIRDReference"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TRIAL"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDIRHReference"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="REFERENCE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <TextView
+        android:id="@+id/tvDIROk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="OK"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"/>
+
+
+
+
+
+</LinearLayout>
+
+

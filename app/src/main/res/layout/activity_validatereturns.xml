@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Validate Returns"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvVROdomoter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LAST ODOMETER READING"
+        android:layout_below="@id/llTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <EditText
+            android:id="@+id/etVROdomoter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="8"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_vehicle"
+            android:drawablePadding="10dp"
+            android:hint="odometer"
+            android:layout_below="@id/tvVROdomoter"
+            />
+
+    <ListView
+        android:id="@+id/lvVRHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etVROdomoter"
+        />
+
+    <ListView
+        android:id="@+id/lvVRDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvVRHeader"
+        android:layout_marginBottom="55dp"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btVRNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="13dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_validatereturns"/>
+
+
+</RelativeLayout>
+

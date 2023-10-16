@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDDCTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dip"
+        android:paddingLeft="50dp"
+        android:text="Display Info"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id = "@+id/rlLayout"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/tvDDCTitle"
+        >
+
+        <ImageView
+            android:id="@+id/ivCDPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_store2"
+            />
+
+        <ImageView
+            android:id="@+id/ivCDCamera"
+            android:layout_width="47dp"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/ic_camera2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDDCLabel"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rlLayout"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY TYPE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"/>
+
+    <EditText
+        android:id="@+id/etDCDDisplayType"
+        android:layout_below="@id/tvDDCLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_display"
+        android:hint="display type"
+        android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890. "
+        android:drawablePadding="@dimen/_10sdp"
+        android:maxLength="30"
+        android:enabled="false"
+        android:textColor="#000"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llScan"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/etDCDDisplayType"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDCDScan"
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundbutton"
+            android:text="SCAN"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlLayout"
+                android:gravity="left"
+                android:text="ASSET NO"
+                android:textSize="@dimen/_12sdp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <EditText
+                android:id="@+id/etDCDAssetNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890. "
+                android:drawableLeft="@drawable/ic_details"
+                android:drawablePadding="10dp"
+                android:hint="asset no"
+                android:maxLength="10"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llScan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvDCDCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="?attr/selectableItemBackground"
+            android:baselineAligned="false"
+            android:paddingLeft="5dp"
+            android:paddingTop="12dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="12dp"
+            android:text="CANCEL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#FA1504"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvDCDSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:text="SAVE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

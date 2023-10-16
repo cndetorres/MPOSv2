@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Sales Order"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSOCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2621-STORE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="@dimen/_16sdp"
+        android:layout_below="@id/llTitle"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/llSOInvoiceNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSOCust"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvInvoiceNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Invoice no.:"
+        android:theme="@style/AppTheme.FontStyle"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@id/tvSOCust"/>
+
+    <EditText
+        android:id="@+id/etInvoiceNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInvoiceNo"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSOGAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSOInvoiceNo">
+
+        <TextView
+            android:id="@+id/tvSOGAmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Gross Amount:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/tvSOGAmtItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSODisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSOGAmt">
+
+        <TextView
+            android:id="@+id/tvSODisc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Discount:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvSODiscItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llSOLReturns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSODisc">
+
+        <TextView
+            android:id="@+id/tvSOLReturns"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Less Returns:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvSOLReturnsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSONAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSOLReturns">
+
+        <TextView
+            android:id="@+id/tvSONAmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Net Amount:"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvSONAmtItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="0.00"
+            android:theme="@style/AppTheme.FontStyle"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvSOHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/llSONAmt"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:id="@+id/lvSODetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvSOHeader"
+        android:layout_marginBottom="@dimen/_55sdp"/>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btSONavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="@dimen/_13sdp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_salesorder"/>
+
+
+</RelativeLayout>
+

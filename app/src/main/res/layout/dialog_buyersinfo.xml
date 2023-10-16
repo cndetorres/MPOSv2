@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvDCADTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add Buyers Info"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvBIName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Buyer name"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:id="@+id/etBIName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_login_username"
+        android:hint="buyer name"
+        android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+        android:maxLength="30"
+        android:inputType="textCapCharacters"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tvBIBDay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/ivBICalendar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_calendar"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/etBIDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="birthday"
+            android:maxLength="100"
+            android:textColor="#000"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/rbBIMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="true"
+            android:layout_marginRight="@dimen/_50sdp"/>
+
+        <RadioButton
+            android:id="@+id/rbBIFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvBIAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:id="@+id/etBIAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="address"
+        android:drawableLeft="@drawable/ic_store"
+        android:drawablePadding="10dp"
+        android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890#. "
+        android:inputType="textCapCharacters"
+        android:maxLength="100"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvBICNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT #"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/etBICNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="11"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        android:hint="09"
+        />
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvBIFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAVORITES"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spBIFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="favorites"
+        android:textColorHint="#05ab9a"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/etBIFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="favorites"
+        android:drawableLeft="@drawable/ic_favorite"
+        android:drawablePadding="10dp"
+        android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+        android:inputType="textCapCharacters"
+        android:maxLength="30"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvBICancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLOSE"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/red"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@+id/tvBIAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_4sdp"
+    android:paddingRight="@dimen/_4sdp">
+
+    <Button
+        android:id="@+id/CLBMap"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="MAP"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+
+    <Button
+        android:id="@+id/CLBInfo"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="INFO"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/CLBARBal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="AR BAL"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/CLBTransact"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="TRANSACT"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

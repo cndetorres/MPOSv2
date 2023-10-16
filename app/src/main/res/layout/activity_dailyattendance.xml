@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Daily Attendance"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <ImageView android:layout_height="@dimen/_150sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:id="@+id/ivImg"
+        android:background="@drawable/img_attendance"
+        android:layout_below="@id/llTitle"
+        android:layout_centerInParent="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvTDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="DATE"
+        android:textColor="#FF0000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@id/ivImg"/>
+
+    <TextView
+        android:id="@+id/tvTTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="12:00:00 PM"
+        android:layout_below="@+id/tvTDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+    <!--<LinearLayout
+        android:id="@+id/llReliever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spReliever"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:hint="choose reliever"
+            android:textColorHint="#05ab9a"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_close2"
+            android:layout_alignParentTop="true"/>
+
+
+    </LinearLayout>-->
+
+
+
+    <Button
+        android:id="@+id/btnTTimein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="Time in"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/tvTTime"/>
+
+    <Button
+        android:id="@+id/btnTTimeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Time out"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/btnTTimein"/>
+
+
+
+</RelativeLayout>
+
+

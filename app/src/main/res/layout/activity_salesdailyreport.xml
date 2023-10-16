@@ -1,0 +1,344 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Sales Daily Report"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSales"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Sales Amount:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etSales"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCollection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llSales">
+
+            <TextView
+                android:id="@+id/tvCollection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Collection Amount:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etCollection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCashOnHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llChecks">
+
+            <TextView
+                android:id="@+id/tvCashOnHand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Cash on Hand:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etCashOnHand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/llCashDeposited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llBO">
+
+            <TextView
+                android:id="@+id/tvCashDeposited"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Cash Deposited:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etCashDeposited"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChecks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llCashDeposited">
+
+            <TextView
+                android:id="@+id/tvChecks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Checks:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etChecks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoOfChecks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llCashDeposited">
+
+            <TextView
+                android:id="@+id/tvNoOfChecks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="No. of Checks:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etNoOfChecks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoOfCalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llCashDeposited">
+
+            <TextView
+                android:id="@+id/tvNoOfCalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="No. of Calls:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etNoOfCalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llCollection">
+
+            <TextView
+                android:id="@+id/tvBO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="BO Amount:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etBO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOdometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/llCashOnHand">
+
+            <TextView
+                android:id="@+id/tvOdometer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="left"
+                android:text="Odometer used:"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"/>
+
+            <EditText
+                android:id="@+id/etOdometer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="right"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.FontStyle"
+                android:textSize="@dimen/_14sdp"
+                android:enabled="false"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="SUBMIT"
+            android:layout_below="@+id/llBO"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="#FFFFFF"></Button>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+
+
+

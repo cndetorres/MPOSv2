@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/rowsDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Christian Lowie"
+        android:paddingTop="12dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/rowsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="12dp"
+        android:text="Name" />
+
+</LinearLayout>
+
+
+

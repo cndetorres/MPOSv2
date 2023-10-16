@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">>
+
+    <TextView android:id="@+id/tvDFRTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="20dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="Fuel Reports"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDFRDtTm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="12/14/18 5:23 PM"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHDtTm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="DATE TIME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <TextView
+        android:id="@+id/tvDFTDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SHELL BALER"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFTHDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="DETAILS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDFRAmt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1,000.00"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHAmt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="AMOUNT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDFRLiters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="12.0"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHLiters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="LITERS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDFROReading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHOReading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="ODOMETER READING"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/tvDFRPONo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="98765"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHPONo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="PO #"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <TextView
+        android:id="@+id/tvDFRInvoiceNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="12345"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/tvDFRHInvoiceNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:text="INVOICE #"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+
+    <TextView
+        android:id="@+id/tvDFROk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="OK"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"/>
+
+</LinearLayout>
+
+
+

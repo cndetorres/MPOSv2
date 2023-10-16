@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Ordering"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDeliveryDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DELIVERY DATE"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@id/llTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <LinearLayout
+        android:id="@+id/llDeliveryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDeliveryDate">
+
+        <ImageView
+            android:id="@+id/ivDeliveryCalendar"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_calendar"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/etDeliveryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:textColor="#000"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/tabCADHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llDeliveryDate">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tabREGULARORDERS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ListView
+                        android:id="@+id/lvOHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_50sdp"/>
+
+                    <ListView
+                        android:id="@+id/lvODetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lvOHeader"
+                        android:layout_marginBottom="@dimen/_98sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/_48sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvORemarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lvODetails"
+                            android:text="REMARKS"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/etORemarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvORemarks"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890./\- "
+                            android:drawableLeft="@drawable/ic_details"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="remarks"
+                            android:maxLength="100" />
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.BottomNavigationView
+                        android:id="@+id/bnvMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:paddingBottom="@dimen/_13sdp"
+                        app:itemIconTint="@android:color/white"
+                        app:itemTextColor="@android:color/white"
+                        app:menu="@menu/menu_ordering"></android.support.design.widget.BottomNavigationView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tabPROMOORDERS">
+
+                    <ListView
+                        android:id="@+id/lvPOHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        />
+
+                    <ListView
+                        android:id="@+id/lvPODetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lvPOHeader"
+                        android:layout_marginBottom="@dimen/_98sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/_48sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvPORemarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lvODetails"
+                            android:text="REMARKS"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/etPORemarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvORemarks"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890./\- "
+                            android:drawableLeft="@drawable/ic_details"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="remarks"
+                            android:maxLength="100" />
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.BottomNavigationView
+                        android:id="@+id/bnvPOMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:paddingBottom="@dimen/_13sdp"
+                        app:itemIconTint="@android:color/white"
+                        app:itemTextColor="@android:color/white"
+                        app:menu="@menu/menu_pordering"></android.support.design.widget.BottomNavigationView>
+
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Stock Transfer"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llTSloc"
+        android:layout_below="@id/llTitle">
+
+        <EditText
+            android:id="@+id/etSTTSLoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:digits="1234567890"
+            android:drawableLeft="@drawable/ic_motorcycle"
+            android:drawablePadding="10dp"
+            android:hint="TSLOC"
+            android:maxLength="30"
+            android:enabled="false"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/btnSTScan"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/colorPrimaryDark"
+            android:text="SCAN"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSTHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/llTSloc"
+        />
+
+    <ListView
+        android:id="@+id/lvSTDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvSTHeader"
+        android:layout_marginBottom="@dimen/_55sdp"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btSTNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="@dimen/_13sdp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_stocktransfer"></android.support.design.widget.BottomNavigationView>
+
+
+</RelativeLayout>

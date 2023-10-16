@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Mode of Payment"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2621-STORE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvPAmtDue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Amount Due:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tvPAmtDueItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tvPAmtPd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.7"
+            android:gravity="left"
+            android:text="Amount Paid:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tvPAmtPdItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="right"
+            android:text="5.10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPPMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PAYMENT MODE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spPPMode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="payment mode"
+        android:textColorHint="#05ab9a" />
+    <TextView
+        android:id="@+id/tvPAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AMOUNT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etPAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number|numberDecimal"
+        android:drawableLeft="@drawable/ic_peso"
+        android:drawablePadding="10dp"
+        android:hint="amount" />
+
+    <TextView
+        android:id="@+id/tvPRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REMARKS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etPRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 -"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:hint="remarks" />
+
+    <TextView
+        android:id="@+id/tvPBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BANK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etPBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+        android:drawableLeft="@drawable/ic_bank"
+        android:drawablePadding="10dp"
+        android:hint="bank"
+        android:inputType="textCapCharacters"/>
+
+    <TextView
+        android:id="@+id/tvPBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BRANCH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etPBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+        android:drawableLeft="@drawable/ic_details"
+        android:drawablePadding="10dp"
+        android:hint="branch"
+        android:inputType="textCapCharacters"/>
+
+    <TextView
+        android:id="@+id/tvPAcctNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECK NO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etPAcctNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_details"
+        android:drawablePadding="10dp"
+        android:hint="check no" />
+
+    <TextView
+        android:id="@+id/tvPDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPDate"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:text="DATE" />
+
+        <EditText
+            android:id="@+id/etPDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890/"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:hint="date"
+            android:maxLength="100"
+            android:enabled="false"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnPCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:background="@color/colorPrimaryDark"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnPAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:background="@color/colorPrimaryDark"
+            android:text="ACCEPT"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

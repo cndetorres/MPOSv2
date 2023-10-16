@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <TextView
+        android:id="@+id/rowsBuyer"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="12dp"
+        android:text="BDO"
+        android:theme="@style/AppTheme.FontStyle"/>
+
+    <TextView
+        android:id="@+id/rowsCPNo"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingRight="5dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="WI"
+        android:theme="@style/AppTheme.FontStyle" />
+
+
+
+</LinearLayout>
+
+

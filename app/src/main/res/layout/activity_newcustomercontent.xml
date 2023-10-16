@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_newcustomerinfo">
+
+        <TabHost
+            android:id="@+id/tabCADHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlLayout"
+            android:layout_marginTop="10dp">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tabOWNERSINFO">
+
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:layout_marginBottom="@dimen/_55sdp"
+                            android:padding="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvNCCCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CUSTOMER CODE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:id="@+id/tvICCCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:text="CUS001"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCCName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TRADE NAME"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCCName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_store"
+                                    android:drawablePadding="10dp"
+                                    android:hint="trade name"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCCType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CHANNEL"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/spNCCType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:hint="channel"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCOName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="OWNER NAME"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCOName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+                                    android:drawableLeft="@drawable/ic_person"
+                                    android:drawablePadding="10dp"
+                                    android:hint="owner name"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+
+                                <TextView
+                                    android:id="@+id/tvNCLimit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LIMIT"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:id="@+id/tvICLimit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:text="10000"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCCExpo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CREDIT EXPOSURE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:id="@+id/tvICCExpo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:text="10000"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCPaymentTerms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PAYMENT TERMS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:id="@+id/tvICPaymentTerms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:text="COD"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCRoute"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ROUTE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCMonday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="M"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCTuesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="T"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCWednesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="W"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCThursday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Th"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCFriday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="F"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                    <CheckBox
+                                        android:id="@+id/chkNCSaturday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="S"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvNCOrderDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ORDER DAY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/mbsOrderDay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="order day"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCDeliveryDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="DELIVERY DAY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/mbsDeliveryDay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="delivery day"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCDeliveryTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="DELIVERY TIME"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp">
+
+                                    <Button
+                                        android:id="@+id/btnTimeFrom"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="FROM" />
+
+                                    <EditText
+                                        android:id="@+id/etTimeFrom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="1234567890:AMP "
+                                        android:drawableLeft="@drawable/ic_time"
+                                        android:drawablePadding="10dp"
+                                        android:hint="time"
+                                        android:maxLength="100"
+                                        android:enabled="false"
+                                        android:textColor="#000"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp">
+
+                                    <Button
+                                        android:id="@+id/btnTimeTo"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="TO" />
+
+                                    <EditText
+                                        android:id="@+id/etTimeTo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="1234567890:AMP "
+                                        android:drawableLeft="@drawable/ic_time"
+                                        android:drawablePadding="10dp"
+                                        android:hint="time"
+                                        android:maxLength="100"
+                                        android:enabled="false"
+                                        android:textColor="#000"/>
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tvNCTelephone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TELEPHONE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCTelephone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_telephone"
+                                    android:drawablePadding="10dp"
+                                    android:hint="telephone"
+                                    android:inputType="number"
+                                    android:maxLength="8" />
+
+                                <TextView
+                                    android:id="@+id/tvNCMphone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MOBILE NO"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCMphone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_mobile"
+                                    android:drawablePadding="10dp"
+                                    android:hint="09"
+                                    android:inputType="number"
+                                    android:maxLength="13" />
+
+                                <TextView
+                                    android:id="@+id/tvSAPAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*SAP ADDRESS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textColor="#3F51B5" />
+
+                                <TextView
+                                    android:id="@+id/tvNSAPAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBBAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*BUSINESS ADDRESS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="#FF0000" />
+
+
+                                <TextView
+                                    android:id="@+id/tvNCBRegion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REGION"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCBRegion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="region"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBProvince"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PROVINCE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <!--<EditText
+                                    android:id="@+id/etNCBRegion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:inputType="textCapCharacters"
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="province"
+                                    android:maxLength="3" />-->
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCBProvice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="province"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBCity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MUNICIPALITY/CITY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <!-- <EditText
+                                    android:id="@+id/etNCBCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+                                    android:maxLength="30"
+                                    android:inputType="textCapCharacters"
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="municipality/city" />-->
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCBCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="city"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBBRGY"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BARANGAY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <!--<EditText
+                                    android:id="@+id/etNCBBRGY"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="brgy"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />-->
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCBBRGY"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="barangay"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBSUBDZONE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SUBDIVISION/ZONE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCBSUBDZONE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="subdivision/zone"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBStreet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="STREET"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCBStreet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="street"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBHURFP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HOUSE/UNIT/ROOM/FLOOR/BLDG/PHASE #"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCBBHURFP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="house/unit/floor/room/bldg/phase #"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCBPCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="POSTAL CODE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <EditText
+                                    android:id="@+id/etNCBPCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:enabled="false"
+                                    android:hint="postal code"
+                                    android:inputType="number|numberDecimal"
+                                    android:maxLength="4"
+                                    android:textColor="#000" />
+
+                                <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCBPCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:hint="please choose province"
+                                    android:textColorHint="#05ab9a"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"/>-->
+
+
+                                <CheckBox
+                                    android:id="@+id/chkNCHome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Home is Same As Business Address" />
+
+                                <TextView
+                                    android:id="@+id/tvSAPHAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*SAP ADDRESS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textColor="#3F51B5" />
+
+                                <TextView
+                                    android:id="@+id/tvNSAPHAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHRegion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REGION"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCHRegion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="region"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHProvince"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PROVINCE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCHProvince"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="province"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHCity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MUNICIPALITY/CITY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCHCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="city"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHBRGY"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BARANGAY"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/etNCHBRGY"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:hint="barangay"
+                                    android:textColorHint="#05ab9a" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHSUBDZONE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SUBDIVISION/ZONE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCHSUBDZONE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="subdivision/zone"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHStreet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="STREET"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCHStreet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="street"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+
+                                <TextView
+                                    android:id="@+id/tvNCHHURFP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HOUSE/UNIT/ROOM/FLOOR/BLDG/PHASE #"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <EditText
+                                    android:id="@+id/etNCHHURFP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890 "
+                                    android:drawableLeft="@drawable/ic_edit"
+                                    android:drawablePadding="10dp"
+                                    android:hint="house/unit/floor/room/bldg/phase #"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30" />
+
+                                <TextView
+                                    android:id="@+id/tvNCHPCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="POSTAL CODE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <EditText
+                                    android:id="@+id/etNCHPCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:enabled="false"
+                                    android:hint="postal code"
+                                    android:inputType="number"
+                                    android:maxLength="4"
+                                    android:textColor="#000" />
+
+                                <TextView
+                                    android:id="@+id/tvNCRemarks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REMARKS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textSize="12dp" />
+
+                                <EditText
+                                    android:id="@+id/etNCRemarks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/\- "
+                                    android:drawableLeft="@drawable/ic_details"
+                                    android:drawablePadding="10dp"
+                                    android:hint="remarks"
+                                    android:maxLength="100" />
+
+                                <TextView
+                                    android:id="@+id/tvNCDP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/dataprivacy"
+                                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                                <!-- <Button
+                                    android:id="@+id/btnNCSubmit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#008000"
+                                    android:text="SUBMIT"
+                                    android:textColor="#FFFFFF"></Button>-->
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                        <android.support.design.widget.BottomNavigationView
+                            android:id="@+id/btOINavigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:background="#66a308"
+                            android:paddingBottom="@dimen/_13sdp"
+                            app:itemIconTint="@android:color/white"
+                            app:itemTextColor="@android:color/white"
+                            app:menu="@menu/menu_ownersinfo"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tabFREQUENCY">
+
+                        <TextView
+                            android:id="@+id/tvFrequency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FREQUENCY"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/spFrequency"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="FREQUENCY"
+                            android:layout_below="@+id/tvFrequency"
+                            android:textColorHint="#05ab9a"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"/>
+
+                        <ListView
+                            android:id="@+id/lvFHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_below="@+id/spFrequency"
+                            />
+
+                        <ListView
+                            android:id="@+id/lvFDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/lvFHeader"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_70sdp"/>
+
+
+                        <android.support.design.widget.BottomNavigationView
+                            android:id="@+id/btNCFrequency"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:background="#66a308"
+                            android:paddingBottom="@dimen/_13sdp"
+                            app:itemIconTint="@android:color/white"
+                            app:itemTextColor="@android:color/white"
+                            app:menu="@menu/menu_addfrequency"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tabBUYERSINFO">
+
+                        <ListView
+                            android:id="@+id/lvBIHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_weight="0.67"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            />
+
+                        <ListView
+                            android:id="@+id/lvCDDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/lvBIHeader"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_70sdp"/>
+
+
+
+                        <android.support.design.widget.BottomNavigationView
+                            android:id="@+id/btNCNavigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:background="#66a308"
+                            android:paddingBottom="@dimen/_13sdp"
+                            app:itemIconTint="@android:color/white"
+                            app:itemTextColor="@android:color/white"
+                            android:layout_alignParentBottom="true"
+                            app:menu="@menu/menu_addbuyersinfo"/>
+
+                    </RelativeLayout>
+
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+</android.support.v4.widget.NestedScrollView>

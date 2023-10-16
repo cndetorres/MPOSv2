@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llCheckin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Check In"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <ImageView android:layout_height="@dimen/_150sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/ivImg"
+        android:background="@drawable/img_checkout"/>
+
+    <TextView
+        android:id="@+id/tvCCICustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2621-STORE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/tvCCILOMeter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text="LAST ODOMETER READING"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tvCCIOmeter"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="1234567890"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCCINOdometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="ODOMETER READING"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <EditText
+        android:id="@+id/etCCILDOmeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_vehicle"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="odometer reading" />
+
+    <TextView
+        android:id="@+id/tvCCIRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REMARKS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/etCCIRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="remarks"
+        android:textColorHint="#05ab9a"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnCCISubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="@dimen/_10sdp"/>
+</LinearLayout>

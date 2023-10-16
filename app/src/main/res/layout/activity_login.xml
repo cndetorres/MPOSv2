@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    >
+
+    <TextView
+        android:id="@+id/tvLVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="VERSION 1.0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="@dimen/_30sdp"
+            android:background="@drawable/bg_card"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DISTRILITE POS"
+                android:textColor="#000"
+                android:textSize="@dimen/_32sdp"
+                />
+
+
+            <EditText
+                android:id="@+id/etLUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_login_username"
+                android:hint="username"
+                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890. "
+                android:drawablePadding="@dimen/_10sdp"
+                android:maxLength="30"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <EditText
+                android:id="@+id/etLPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:drawableLeft="@drawable/ic_password"
+                android:inputType="textPassword"
+                android:drawablePadding="@dimen/_10sdp"
+                android:maxLength="30"
+                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890. "
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etLVehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/ic_vehicle"
+                    android:drawablePadding="10dp"
+                    android:hint="vehicle" />
+
+                <Button
+                    android:id="@+id/btnLScan"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/roundbutton"
+                    android:text="SCAN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/btnLLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/roundbutton"
+                    android:text="LOG IN"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="@dimen/_20sdp"/>
+
+                <Button
+                    android:id="@+id/btnLExit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/roundbutton"
+                    android:text="EXIT"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

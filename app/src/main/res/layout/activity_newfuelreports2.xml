@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/llTitle">
+
+        <TextView android:id="@+id/tvDCATitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="New Fuel Report"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNFRDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:layout_below="@id/llTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <EditText
+        android:id="@+id/etNFRDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="100"
+        android:hint="details"
+        android:drawableLeft="@drawable/ic_details"
+        android:inputType="textCapCharacters"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/tvNFRDetails" />
+
+    <TextView
+        android:id="@+id/tvNFRAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMOUNT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@+id/etNFRDetails" />
+
+    <EditText
+        android:id="@+id/etNFRAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number|numberDecimal"
+        android:hint="amount"
+        android:drawableLeft="@drawable/ic_peso"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/tvNFRAmt" />
+
+    <TextView
+        android:id="@+id/tvNFRLiters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LITERS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@+id/etNFRAmt" />
+
+    <EditText
+        android:id="@+id/etNFRLiters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number|numberDecimal"
+        android:hint="liters"
+        android:drawableLeft="@drawable/ic_station"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/tvNFRLiters"/>
+
+    <TextView
+        android:id="@+id/tvNFROdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODOMETER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@+id/etNFRLiters" />
+
+    <EditText
+        android:id="@+id/etNFROdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_vehicle"
+        android:drawablePadding="10dp"
+        android:hint="odometer"
+        android:layout_below="@+id/tvNFROdo" />
+
+    <TextView
+        android:id="@+id/tvNFRPONum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PO #"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@+id/etNFROdo" />
+
+    <EditText
+        android:id="@+id/etNFRPONum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890."
+        android:maxLength="20"
+        android:hint="PO #"
+        android:drawableLeft="@drawable/ic_details"
+        android:inputType="textCapCharacters"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/tvNFRPONum" />
+
+    <TextView
+        android:id="@+id/tvNFRInvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INVOICE #"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@+id/etNFRPONum" />
+
+    <EditText
+        android:id="@+id/etNFRInvNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        android:drawableLeft="@drawable/ic_details"
+        android:drawablePadding="10dp"
+        android:hint="invoice #"
+        android:inputType="textCapCharacters"
+        android:maxLength="20"
+        android:layout_below="@+id/tvNFRInvNum" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btNFRNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="13dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_newfuelreports"/>
+
+
+</RelativeLayout>
